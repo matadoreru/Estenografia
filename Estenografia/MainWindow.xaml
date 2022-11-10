@@ -1,0 +1,32 @@
+﻿<Window x:Class="Estenografia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Estenografia"
+        mc:Ignorable="d"
+        Title="MenuEstenografia" Height="450" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" x:Name="btnXifrar" Content="Xifrar Imatge"
+                Margin="15" FontSize="25" Click="btnXifrar_Click" Height="50"/>
+        <Button Grid.Row="1" x:Name="btnPDF" Content="PDF encriptar"
+                Margin="15" FontSize="25" Click="btnPDF_Click" Height="50"/>
+        <Button Grid.Row="2" x:Name="btnDesxifrar" Content="Desxifrar Imatge"
+                Margin="15" FontSize="25" Click="btnDesxifrar_Click" Height="50"/>
+
+    </Grid>
+</Window>

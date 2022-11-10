@@ -1,0 +1,23 @@
+﻿<Window x:Class="Estenografia.PDFMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Estenografia"
+        mc:Ignorable="d"
+        Title="PDFMenu" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" x:Name="btnXifrar" Content="Xifrar PDF"
+                Margin="15" FontSize="25" Click="btnXifrar_Click" Height="45"/>
+
+        <Button Grid.Row="2" x:Name="btnDesxifrar" Content="Desxifrar PDF"
+                Margin="15" FontSize="25" Click="btnDesxifrar_Click " Height="45"/>
+
+    </Grid>
+</Window>
